@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blue: rgb(255, 255, 255)
+    --dark-blue: rgb();
+    --red: ;
+    --border-radius: 150%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,22 +24,37 @@ header {
 h1{
     color: aliceblue;
     text-align: left;
+    font-size: 250%;
+}
+
+h2{
+    padding-left: 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    padding-left: 10%;
 }
 
 nav {
     display: flex;
-    justify-content: right;
-    background-color: #444;
+    justify-content: flex-end;
+    background-color: var(--dark-blue);
     padding: 10px;
+    background-image: url(../porter-robinson-worlds-album-top-charts-youredm.jpg);
 }
 
 nav a {
-    color: white;
+    color: var(--blue);
     text-decoration: none;
     padding: 10px;
-    margin: 0 10px;
+    margin: 0px;
 }
 
-main {
-    padding: 20px;
+nav a:hover {
+    color: #fff;
+  }
+
+.about-me {
+    padding: 100%, 200%, 100%, 200%;
 }
