@@ -4,9 +4,11 @@
 
 :root {
     --blue: rgb(67, 94, 225);
-    --dark-blue: rgb();
+    --dark-blue: rgb(17, 0, 255);
     --red: rgb(221, 28, 28);
     --white: rgb(255, 255, 255);
+    --grey: rgb(177, 177, 177);
+    --dark-grey: rgb(78, 78, 78);
     --border-radius: 150%;
 }
 
@@ -14,10 +16,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--grey);
 }
 
 header {
-    background-color: #333333;
+    background-color: var(--dark-grey);
     padding: 10px;
     text-align: center;
 }
@@ -28,7 +31,7 @@ header img {
 
 h1{
     color: aliceblue;
-    text-align: left;
+    text-align: center;
     font-size: 250%;
 }
 
@@ -67,7 +70,7 @@ nav a:hover {
 }
 
 #work {
-    border: 5px solid #333333;
+
 }
 
 .flex-container {
@@ -90,11 +93,19 @@ nav a:hover {
 }
 
 .refactor {
-    background-image: url("../Capture24.PNG");
+    background-image: url("../images/Capture24.PNG");
 }
 
-.practice {
-    background-image: url("../01-html-css-git-homework-demo.png");
+.horiseon {
+    background-image: url("../images/01-html-css-git-homework-demo.png");
+}
+
+.java {
+    background-image: url(../images/javascript-Djs-Outsourcing.png);
+}
+
+.upcoming {
+    background-image: url(../images/image03.jpg);
 }
 
 .contacts {
