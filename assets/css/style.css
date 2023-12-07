@@ -27,6 +27,7 @@ header {
 
 header img {
     margin-left: 1%;
+    border-radius: 100%;
 }
 
 h1{
@@ -73,16 +74,15 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 10%, 10%, 0, 10%;
 }
 
 .flex-item {
     padding: 10%;
     border-radius: 5%;
     border: 2px solid var(--red);
-    margin: 2%;
     min-height: 150px;
     max-height: 150px;
+    margin: 5%;
 }
 
 .flex-item:hover {
@@ -92,20 +92,29 @@ nav a:hover {
 .flex-item h2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-style: dashed;
+    border-radius: 20%;
     padding: 2%;
+    background-color: var(--blue);
+}
+
+.box-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 20%;
     background-color: var(--blue);
 }
 
 .refactor {
     background-image: url("../images/Capture24.PNG");
     transform: scale(1.5, 1.5);
-    margin: 2%;
-}
-
-.refactor h2 {
-    background-color: var(--red);
-}
-
+    margin-right: 30%;
+    margin-left: 30%;
+    font-size: 75%;
+} 
 .horiseon {
     background-image: url("../images/01-html-css-git-homework-demo.png");
 }
@@ -130,9 +139,24 @@ footer {
     justify-content: center;
 }
 
-/* ul a {
-    padding: 0 10% 0 10%;
-} */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    body {
+        background-color: var(--dark-grey);
+    }
+
+    p {
+        color: var(--white);
+    }
+
+    h2 {
+        color: var(--white);
+    }
+  }
+
 @media screen and (max-width: 576px) {
     nav {
         justify-content: center;
